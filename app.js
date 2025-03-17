@@ -14,11 +14,11 @@ app.set("views", viewPath);
 app.use(express.static(pubDir));
 
 const dbConnection = mysql.createConnection({
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD, 
-  database: process.env.DB_NAME
+  host: "mysql-1adb12a9-kesavan-bed8.h.aivencloud.com",
+  port:"17832",
+  user: "avnadmin",
+  password: "AVNS_sQ94r5cb1uAh-xBI6qf",
+  database: "defaultdb",
 });
 
 dbConnection.connect((err) => {
