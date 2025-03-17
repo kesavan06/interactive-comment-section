@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment section</title>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div id="loginContainer" class="login-container">
+      <div class="login-box">
+        <input type="text" id="username" placeholder="Enter username" />
+        <button id="loginBtn">Login</button>
+      </div>
+    </div>
+
+    <div id="commentContainer" class="comment-container">
+      <div id="commentSpace" class="commentSpace"></div>
+      <div class="commentInput">
+        <div class="profilePhoto">
+          <img src="assets/image-ramsesmiron.png" alt="profile Img" />
+        </div>
+        <div class="inputElement">
+          <div id="msgInput" contenteditable="true"></div>
+        </div>
+        <div class="sendButton">
+          <button id="sendBtn">SEND</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/client.js"></script>
+  </body>
+</html>

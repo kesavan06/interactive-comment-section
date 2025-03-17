@@ -1,0 +1,484 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f6fa;
+}
+
+.comment-container {
+  width: 50em;
+  max-width: 100%;
+  height: 60em;
+  max-height: 100%;
+  background-color: #f9f9f9;
+  background-color: #f5f6fa;
+}
+
+.commentBox {
+  width: 100%;
+  height: 75%;
+  padding: 15px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.commentInput {
+  padding: 20px;
+  height: 20%;
+  margin: 20px 0px 0px 0px;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.inputElement {
+  width: 70%;
+}
+.sendButton {
+  width: 15%;
+}
+
+.profilePhoto {
+  width: 5%;
+}
+.profilePhoto img {
+  width: 40px;
+}
+.inputElement div {
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #c7c3c3;
+  font-size: 1.1em;
+  padding: 10px;
+  overflow: auto;
+  word-wrap: break-word;
+}
+.sendButton button {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(83, 87, 182);
+  color: white;
+  font-size: 1em;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.commentBox {
+  background-color: #f5f6fa;
+}
+.comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.mainComment {
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0px 0px 20px 0px;
+}
+
+.threadComment {
+  display: flex;
+  align-items: flex-start;
+  align-self: flex-end;
+  justify-content: flex-start;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  height: fit-content;
+  margin: 0px 0px 20px 0px;
+}
+
+.likeBtn {
+  width: 50px;
+  height: 100px;
+  background-color: rgb(245, 246, 250);
+  display: flex;
+  border: 1px solid transparent;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 0px 30px 0px 0px;
+  border-radius: 10px;
+}
+
+.likeBtn img {
+  width: 15px;
+  cursor: pointer;
+}
+.likeBtn p {
+  color: rgb(83, 87, 182);
+  font-weight: 600;
+}
+
+.nameDate {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5px 0px 5px;
+}
+
+.name img {
+  width: 40px;
+}
+.name p {
+  color: rgb(113, 123, 134);
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+  margin: 0px 20px 0px 0px;
+}
+
+.reply p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
+  color: rgb(83, 87, 182);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.givenMsg {
+  margin: 10px 0px 0px 0px;
+}
+
+.givenMsg p {
+  width: 670px;
+  min-width: 100%;
+  font-weight: 400;
+  color: rgb(113, 123, 134);
+  letter-spacing: 1px;
+  font-size: 1em;
+  line-height: 1.7;
+}
+.threadMsg p {
+  width: 525px;
+  min-width: 100%;
+  font-weight: 400;
+  color: rgb(113, 123, 134);
+  letter-spacing: 1px;
+  font-size: 1em;
+  line-height: 1.7;
+}
+.replyComment {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0px 0px 20px 0px;
+}
+.reply-profileImg img {
+  width: 40px;
+}
+.replyMsgInput {
+  height: 100px;
+  width: 70%;
+  border-radius: 10px;
+  border: 1px solid #c7c3c3;
+  font-size: 1.1em;
+  padding: 10px;
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+.replyButton {
+  width: 15%;
+}
+
+.replyButton button {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(83, 87, 182);
+  color: white;
+  font-size: 1em;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(223, 19%, 93%);
+}
+
+.login-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-box {
+  width: 30em;
+  min-width: fit-content;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebedf6;
+  border-radius: 10px;
+}
+
+.login-box input {
+  width: 50%;
+  height: 50px;
+  font-size: 1.2em;
+  padding: 0px 0px 0px 10px;
+}
+
+.login-box button {
+  width: 20%;
+  height: 50px;
+  font-size: 1.2em;
+  background-color: rgb(83, 87, 182);
+  color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.login-container h2 {
+  letter-spacing: 1px;
+  margin: 0px 0px 10px 0px;
+}
+
+.commentSpace {
+  height: 50em;
+  overflow-y: auto;
+}
+
+.comment-container {
+  width: 740px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.commentBox {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.commentInput {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.inputElement {
+  flex: 1;
+}
+
+.sendButton {
+  align-self: flex-start;
+}
+
+.profilePhoto {
+  width: 40px;
+  height: 40px;
+}
+
+.profilePhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inputElement div {
+  width: 100%;
+  min-height: 100px;
+  padding: 15px;
+  border: 1px solid hsl(223, 19%, 93%);
+  border-radius: 10px;
+  color: hsl(211, 10%, 45%);
+  outline: none;
+}
+
+.sendButton button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(238, 40%, 52%);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mainComment {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  gap: 25px;
+  margin: 0px 0px 20px 0px;
+}
+
+.threadComment {
+  width: 90%;
+  padding: 20px;
+  margin: 0px 0px 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  gap: 25px;
+}
+
+.likeBtn {
+  padding: 10px;
+  background-color: hsl(223, 19%, 93%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  height: fit-content;
+}
+
+.likeBtn img {
+  cursor: pointer;
+}
+
+.msgDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nameDate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.name img {
+  width: 35px;
+}
+
+.name p {
+  color: hsl(211, 10%, 45%);
+}
+
+.reply {
+  cursor: pointer;
+}
+
+.replyComment {
+  width: 90%;
+  margin-left: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.replyMsgInput {
+  flex: 1;
+  min-height: 100px;
+  padding: 15px;
+  border: 1px solid hsl(223, 19%, 93%);
+  border-radius: 10px;
+  color: hsl(211, 10%, 45%);
+  outline: none;
+}
+
+.loginContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginBox {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.loginBox input {
+  padding: 10px;
+  border: 1px solid hsl(223, 19%, 93%);
+  border-radius: 5px;
+  outline: none;
+}
+
+.loginBox button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(238, 40%, 52%);
+  color: white;
+  cursor: pointer;
+}
+
+.givenMsg p {
+  color: hsl(211, 10%, 45%);
+}
