@@ -18,7 +18,7 @@ const dbConnection = mysql.createConnection({
   port:"17832",
   user: "avnadmin",
   password: "AVNS_sQ94r5cb1uAh-xBI6qf",
-  database: "defaultdb",
+  database: "comment_module",
 });
 
 dbConnection.connect((err) => {
